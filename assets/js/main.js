@@ -75,12 +75,7 @@ $(function() {
     
     //===== Magnific Popup
     
-    $('.image-popup').magnificPopup({
-      type: 'image',
-      gallery:{
-        enabled:true
-      }
-    });
+
     
     
     //===== Counter Up

@@ -688,6 +688,15 @@
 .pb-130 {
 	padding-bottom: 130px;
 }
+
+@media (max-width: 767px) {
+	.pt-115 {
+		padding-top: 50px;
+	}
+	.pb-130 {
+		padding-bottom: 50px;
+	}
+}
 .pb-135 {
 	padding-bottom: 135px;
 }

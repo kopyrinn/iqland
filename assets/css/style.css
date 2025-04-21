@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Arial;
   font-weight: normal;
@@ -38,7 +42,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #1b273d;
   margin: 0px; }
@@ -73,6 +76,30 @@ p {
   color: #777777;
   margin: 0px; }
 
+    ul.custom-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul.custom-list li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: #777777;
+    }
+
+    ul.custom-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 10px;
+      height: 10px;
+      background-color: #007BFF;
+      border-radius: 50%;
+    }
 .bg_cover {
   background-position: center center;
   background-size: cover;
@@ -578,7 +605,11 @@ p {
       height: 850px; } }
   @media (max-width: 767px) {
     .header-content-area {
-      height: 650px; } }
+      height: 850px; } 
+      .des-title {
+        font-size: 12px;
+    }
+  }
   @media only screen and (min-width: 576px) and (max-width: 767px) {
     .header-content-area {
       height: 550px; } }
@@ -645,6 +676,7 @@ p {
 }
   .header-content .header-title {
     font-size: 45px;
+    font-weight: 900;
     color: #fff;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px black; 
@@ -658,16 +690,28 @@ p {
         font-size: 54px; } }
     @media (max-width: 767px) {
       .header-content .header-title {
-        font-size: 30px; } }
+        font-size: 20px; 
+        font-weight: 900;
+      } 
+
+      .pb-150 {
+        padding-bottom: 50px;
+    }
+  }
   .header-content .sub-title {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 700;
     color: #fff;
     text-transform: uppercase;
     margin-top: 22px; }
+
+    .des-title {
+        color: white;
+    }
+
     @media (max-width: 767px) {
       .header-content .sub-title {
-        font-size: 20px; } }
+        font-size: 13px; } }
   .header-content .header-btn {
     padding-top: 50px; }
     .header-content .header-btn li {
@@ -677,6 +721,9 @@ p {
 /*===========================
        3.ABOUT css 
 ===========================*/
+
+
+
 .about-image img {
   width: 100%; }
 
